@@ -1,0 +1,6 @@
+public class PayrollCalculator {
+
+    public double processPayroll(Employee emp) {
+        return emp.calculateSalary(); // polymorphism
+    }
+}
