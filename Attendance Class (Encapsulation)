@@ -1,0 +1,24 @@
+public class Attendance {
+    private double hoursWorked;
+    private int daysWorked;
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        if (hoursWorked >= 0) {
+            this.hoursWorked = hoursWorked;
+        }
+    }
+
+    public int getDaysWorked() {
+        return daysWorked;
+    }
+
+    public void setDaysWorked(int daysWorked) {
+        if (daysWorked >= 0) {
+            this.daysWorked = daysWorked;
+        }
+    }
+}
