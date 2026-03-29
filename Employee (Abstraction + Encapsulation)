@@ -1,0 +1,56 @@
+public abstract class Employee {
+    private String employeeId;
+    private String name;
+    private double salary;
+    private double hourlyRate;
+
+    // Constructor
+    public Employee(String employeeId, String name) {
+        this.employeeId = employeeId;
+        this.name = name;
+    }
+
+    // Getters and Setters (Encapsulation)
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        if (employeeId != null && !employeeId.isEmpty()) {
+            this.employeeId = employeeId;
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (name != null && !name.isEmpty()) {
+            this.name = name;
+        }
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        if (salary > 0) {
+            this.salary = salary;
+        }
+    }
+
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public void setHourlyRate(double hourlyRate) {
+        if (hourlyRate > 0) {
+            this.hourlyRate = hourlyRate;
+        }
+    }
+
+    // Abstract Method (Abstraction)
+    public abstract double calculateSalary();
+}
