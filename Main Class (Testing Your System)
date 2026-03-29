@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+
+        // Create employees
+        FullTimeEmployee emp1 = new FullTimeEmployee("E001", "Alice", 5000);
+        PartTimeEmployee emp2 = new PartTimeEmployee("E002", "Bob", 20, 80);
+
+        // Payroll calculator
+        PayrollCalculator calculator = new PayrollCalculator();
+
+        // Process payroll
+        double salary1 = calculator.processPayroll(emp1);
+        double salary2 = calculator.processPayroll(emp2);
+
+        // Output
+        System.out.println("Full-Time Employee Salary: " + salary1);
+        System.out.println("Part-Time Employee Salary: " + salary2);
+    }
+}
